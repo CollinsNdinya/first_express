@@ -1,0 +1,73 @@
+html, body, form, div, button {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#formDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 2rem; */
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    border: 2px solid whitesmoke;
+    height: 17vh;
+}
+
+label {
+    /* margin:  4rem; */
+    font-weight: bolder;
+}
+
+#title {
+    margin-top: .25rem;
+}
+
+#submit {
+    font-weight: bolder;
+    margin: 1.5rem;
+    padding: .5rem 1rem;
+    border-radius: 1px;
+    background-color: rgb(195, 235, 245);
+    /* border: 2px solid red; */
+}
+
+#submit:hover {
+    background-color: whitesmoke;
+}
+
+#getposts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1rem;
+    padding: .25rem;
+    height: 2rem;
+    width: 6rem;
+
+    color: rgb(0, 0, 19);
+    font-weight: 900;
+    text-transform: capitalize;
+
+    background-color: rgb(195, 235, 245);
+    /* border: 2px solid red; */
+}
+
+#getposts:hover {
+    background-color: whitesmoke;
+}
