@@ -31,16 +31,17 @@ async function showPosts() {
     
 }
 
-async function addPost() {
-    const formData = new FormData(this)
+async function addPost(e) {
+    e.preventDefault()
+    const formData = new FormData(e.target)
     const title = formData.get('title')
-    console.log(title)
+    console.log(`Submitting`, title)
 
     try {
         const res = await fetch ( 'http://localhost:8000/api/posts', {
-            method : POST,
+            method : 'POST',
             headers: {
-                'Content-Type': 'application/jsom'
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({title})
         })
@@ -57,7 +58,7 @@ async function addPost() {
         showPosts()
 
     } catch(error) {
-        console.log(error)
+        console.log(`Error adding post`)
     }
 }
 

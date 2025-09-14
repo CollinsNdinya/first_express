@@ -71,3 +71,7 @@ label {
 #getposts:hover {
     background-color: whitesmoke;
 }
+
+#output {
+    margin-top: 2rem;
+}
