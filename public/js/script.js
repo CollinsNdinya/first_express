@@ -5,7 +5,6 @@ const form = document.querySelector('#submit')
 
 
 async function showPosts() {
-    // e.preventDafault();
 
     try {
         const res = await fetch ( 'http://localhost:8000/api/posts' )
@@ -38,7 +37,7 @@ async function addPost(e) {
     console.log(`Submitting`, title)
 
     try {
-        const res = await fetch ( 'http://localhost:8000/api/posts', {
+        const res = await fetch ('http://localhost:8000/api/posts', {
             method : 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -58,7 +57,7 @@ async function addPost(e) {
         showPosts()
 
     } catch(error) {
-        console.log(`Error adding post`)
+        console.log(`Error adding post`, error)
     }
 }
 

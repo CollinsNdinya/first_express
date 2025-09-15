@@ -28,6 +28,8 @@ form {
     height: 17vh;
 }
 
+
+
 label {
     /* margin:  4rem; */
     font-weight: bolder;
@@ -39,7 +41,7 @@ label {
 
 #submit {
     font-weight: bolder;
-    margin: 1.5rem;
+    margin-top: 1rem;
     padding: .5rem 1rem;
     border-radius: 1px;
     background-color: rgb(195, 235, 245);
@@ -74,4 +76,9 @@ label {
 
 #output {
     margin-top: 2rem;
+}
+
+form,
+form:hover {
+    background-color: transparent !important;
 }
